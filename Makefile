@@ -1,5 +1,5 @@
-COMPOSE = docker-compose -f srcs/docker-compose.yml
-DATA_DIR := $(HOME)/data
+COMPOSE		= docker-compose -f srcs/docker-compose.yml
+DATA_DIR	= $(HOME)/data
 
 all: setup
 	$(COMPOSE) up -d --build
